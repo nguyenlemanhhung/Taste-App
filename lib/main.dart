@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       title: 'Taste App',
       theme: theme(),
-      initialRoute: SignInScreen.routeName,
+      initialRoute: SplashScreen.routeName,
       routes: routes,
     );
   }

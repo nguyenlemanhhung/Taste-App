@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:taste_app/components/custom_button.dart';
+import 'package:taste_app/components/custom_button_full.dart';
 import 'package:taste_app/screen/forgot_password/send_request.dart';
 
 import '../../../constants/colors.dart';
