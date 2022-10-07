@@ -72,9 +72,10 @@ class _MainScreenState extends State<MainScreen> {
                           _currentPage = 0;
                         });
                       },
-                      child: Icon(
-                        Icons.home,
-                        size: 30,
+                      child: Image.asset(
+                        '/icons/appbar/home.png',
+                        height: 20,
+                        width: 20,
                         color: _currentPage == 0 ? mainOrange : iconHint,
                       ),
                     ),
@@ -86,9 +87,10 @@ class _MainScreenState extends State<MainScreen> {
                           _currentPage = 1;
                         });
                       },
-                      child: Icon(
-                        Icons.list,
-                        size: 30,
+                      child: Image.asset(
+                        '/icons/appbar/list.png',
+                        height: 20,
+                        width: 20,
                         color: _currentPage == 1 ? mainOrange : iconHint,
                       ),
                     ),
@@ -105,9 +107,10 @@ class _MainScreenState extends State<MainScreen> {
                           _currentPage = 2;
                         });
                       },
-                      child: Icon(
-                        Icons.person,
-                        size: 30,
+                      child: Image.asset(
+                        '/icons/appbar/profile.png',
+                        height: 20,
+                        width: 20,
                         color: _currentPage == 2 ? mainOrange : iconHint,
                       ),
                     ),
@@ -119,9 +122,10 @@ class _MainScreenState extends State<MainScreen> {
                           _currentPage = 3;
                         });
                       },
-                      child: Icon(
-                        Icons.settings,
-                        size: 30,
+                      child: Image.asset(
+                        '/icons/appbar/settings.png',
+                        height: 20,
+                        width: 20,
                         color: _currentPage == 3 ? mainOrange : iconHint,
                       ),
                     ),

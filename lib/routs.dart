@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:taste_app/screen/forgot_password/reset_password.dart';
+import 'package:taste_app/screen/forgot_password/send_request.dart';
 import 'package:taste_app/screen/main_screen/main_screen.dart';
 import 'package:taste_app/screen/sign_in/sign_in_screen.dart';
 import 'package:taste_app/screen/sign_up/sign_up_screen.dart';
@@ -9,7 +11,9 @@ final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => SplashScreen(),
   SignInScreen.routeName: (context) => SignInScreen(),
   SignUpScreen.routeName: (context) => SignUpScreen(),
-  // SetupProfileScreen.routeName: (context) => SetupProfileScreen(),
+
+  SendRequest.routeName: (context) => SendRequest(),
+  ResetPassword.routeName: (context) => ResetPassword(),
 
   MainScreen.routeName: (context) => MainScreen(),
 

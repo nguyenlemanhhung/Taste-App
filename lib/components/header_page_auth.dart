@@ -14,32 +14,22 @@ class HeaderPageAuth extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(
-            flex: 3,
-            child: Image.asset(
-              '/images/logo.png',
-              width: 60.0,
-              height: 70.0,
+          Image.asset(
+            '/images/logo.png',
+            width: 60.0,
+            height: 70.0,
+          ),
+          Text(
+            title,
+            style: PrimaryFont.bold600(24).copyWith(
+              color: textBlack1,
             ),
           ),
-          Expanded(
-            flex: 2,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text(
-                  title,
-                  style: PrimaryFont.bold600(24).copyWith(
-                    color: textblack1,
-                  ),
-                ),
-                Text(
-                  subTitle,
-                  style: PrimaryFont.regular400(14).copyWith(
-                    color: textblack1,
-                  ),
-                ),
-              ],
+          Text(
+            textAlign: TextAlign.center,
+            subTitle,
+            style: PrimaryFont.regular400(14).copyWith(
+              color: textBlack1,
             ),
           ),
         ],

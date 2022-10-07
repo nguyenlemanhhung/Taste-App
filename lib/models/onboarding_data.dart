@@ -14,9 +14,9 @@ class OnboardingContent {
 
 List<OnboardingContent> onboardingData = [
   OnboardingContent(
-    title: "1000+ Foods to Eat Before You Die",
+    title: "1000+ Foods to Eat\nBefore You Die",
     subTitle:
-        "It’s a pleasure to check off the foods you’ve eaten and to plan to try the ones you haven’t yet enjoyed",
+        "It's a pleasure to check off the foods you've eaten and to plan to try the ones you haven't yet enjoyed",
     image: "/images/onboarding/onboarding-1.png",
   ),
   OnboardingContent(

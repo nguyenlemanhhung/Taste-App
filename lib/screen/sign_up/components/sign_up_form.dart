@@ -8,14 +8,15 @@ import 'package:taste_app/screen/forgot_password/send_request.dart';
 import '../../../constants/colors.dart';
 import '../../../constants/fonts.dart';
 
-class SignInForm extends StatefulWidget {
-  const SignInForm({super.key});
+class SignUpForm extends StatefulWidget {
+  const SignUpForm({super.key});
 
   @override
-  State<SignInForm> createState() => _SignInFormState();
+  State<SignUpForm> createState() => _SignUpFormState();
 }
 
-class _SignInFormState extends State<SignInForm> {
+class _SignUpFormState extends State<SignUpForm> {
+  bool status = false;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -58,7 +59,30 @@ class _SignInFormState extends State<SignInForm> {
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(
-                  hintText: 'Enter you password',
+                  hintText: 'Enter your password',
+                  hintStyle: PrimaryFont.regular400(14).copyWith(
+                    color: textHint,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Confirm Password',
+                style: PrimaryFont.medium500(14).copyWith(
+                  color: textGray2,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextFormField(
+                keyboardType: TextInputType.visiblePassword,
+                decoration: InputDecoration(
+                  hintText: 'Re-enter your password',
                   hintStyle: PrimaryFont.regular400(14).copyWith(
                     color: textHint,
                   ),

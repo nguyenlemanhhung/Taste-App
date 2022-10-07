@@ -3,8 +3,8 @@ import 'package:taste_app/constants/colors.dart';
 
 import '../constants/fonts.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton(
+class CustomButtonFull extends StatelessWidget {
+  const CustomButtonFull(
       {super.key,
       required this.text,
       required this.press,
@@ -27,7 +27,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(10),
         ),
         onPressed: press,
       ),

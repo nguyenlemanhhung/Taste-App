@@ -28,11 +28,6 @@ InputDecorationTheme inputDecorationTheme() {
     border: InputBorder.none,
     filled: true,
     fillColor: backgroundGray,
-    // floatingLabelBehavior: FloatingLabelBehavior.always,
-    // floatingLabelAlignment: FloatingLabelAlignment.start,
-    contentPadding: EdgeInsets.symmetric(
-      horizontal: 10,
-      vertical: 7,
-    ),
+    contentPadding: EdgeInsets.all(15),
   );
 }

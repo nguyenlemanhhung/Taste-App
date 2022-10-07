@@ -16,24 +16,38 @@ class OnbardingContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Image.asset(image),
-        Column(
-          children: <Widget>[
-            Text(
-              title,
-              style: PrimaryFont.bold600(24).copyWith(
-                color: textblack1,
-              ),
-              textAlign: TextAlign.center,
+        Container(
+          width: double.infinity,
+          child: Image.asset(image),
+        ),
+        Spacer(
+          flex: 1,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25),
+          child: Text(
+            title,
+            style: PrimaryFont.bold600(24).copyWith(
+              color: textBlack1,
             ),
-            Text(
-              subTitle,
-              style: PrimaryFont.regular400(16).copyWith(
-                color: textblack1,
-              ),
-              textAlign: TextAlign.center,
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Spacer(
+          flex: 1,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25),
+          child: Text(
+            subTitle,
+            style: PrimaryFont.regular400(16).copyWith(
+              color: textBlack1,
             ),
-          ],
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Spacer(
+          flex: 2,
         ),
       ],
     );

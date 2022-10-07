@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_switch/flutter_switch.dart';
-import 'package:taste_app/components/custom_button.dart';
-import 'package:taste_app/screen/forgot_password/send_request.dart';
 
 import '../../../constants/colors.dart';
 import '../../../constants/fonts.dart';
 
-class SignInForm extends StatefulWidget {
-  const SignInForm({super.key});
+class ResetPasswordForm extends StatefulWidget {
+  const ResetPasswordForm({super.key});
 
   @override
-  State<SignInForm> createState() => _SignInFormState();
+  State<ResetPasswordForm> createState() => _ResetPasswordFormState();
 }
 
-class _SignInFormState extends State<SignInForm> {
+class _ResetPasswordFormState extends State<ResetPasswordForm> {
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -25,29 +22,7 @@ class _SignInFormState extends State<SignInForm> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Email',
-                style: PrimaryFont.medium500(14).copyWith(
-                  color: textGray2,
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                    hintText: 'Type your email here...',
-                    hintStyle: PrimaryFont.regular400(14).copyWith(
-                      color: textHint,
-                    )),
-              ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Password',
+                'Type your new password',
                 style: PrimaryFont.medium500(14).copyWith(
                   color: textGray2,
                 ),
@@ -58,7 +33,30 @@ class _SignInFormState extends State<SignInForm> {
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(
-                  hintText: 'Enter you password',
+                  hintText: 'Type your new password',
+                  hintStyle: PrimaryFont.regular400(14).copyWith(
+                    color: textHint,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Confirm new password',
+                style: PrimaryFont.medium500(14).copyWith(
+                  color: textGray2,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              TextFormField(
+                keyboardType: TextInputType.visiblePassword,
+                decoration: InputDecoration(
+                  hintText: 'Re-enter your new password',
                   hintStyle: PrimaryFont.regular400(14).copyWith(
                     color: textHint,
                   ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taste_app/constants/colors.dart';
 import 'package:taste_app/screen/splash_screen/components/onboarding_content.dart';
-import '../../../components/custom_button.dart';
+import '../../../components/custom_button_full.dart';
 import '../../../models/onboarding_data.dart';
 import '../../sign_in/sign_in_screen.dart';
 
@@ -35,7 +35,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
     return SafeArea(
       child: Column(
         children: [
-          Expanded(
+          Flexible(
             flex: 8,
             child: PageView.builder(
               controller: _pageController,
@@ -52,7 +52,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
               ),
             ),
           ),
-          Expanded(
+          Flexible(
             flex: 2,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -66,7 +66,10 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                       (index) => dotIndicator(index),
                     ),
                   ),
-                  CustomButton(
+                  Spacer(
+                    flex: 2,
+                  ),
+                  CustomButtonFull(
                     text: currentPage == onboardingData.length - 1
                         ? 'Get Started'
                         : 'Continue',
@@ -81,6 +84,9 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                             );
                     },
                     textBtnSize: 16,
+                  ),
+                  Spacer(
+                    flex: 1,
                   ),
                 ],
               ),
